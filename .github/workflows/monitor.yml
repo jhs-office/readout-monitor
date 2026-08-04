@@ -1,0 +1,56 @@
+name: Readout Monitor
+
+on:
+  schedule:
+    # Every 15 minutes. GitHub cron is best-effort — expect 5–30 min of extra lag.
+    - cron: "*/15 * * * *"
+  workflow_dispatch: {}   # lets you trigger a run by hand from the Actions tab
+
+# Required so the job can push state.json back to the repo.
+permissions:
+  contents: write
+
+concurrency:
+  group: readout-monitor
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run monitor
+        env:
+          ALPACA_KEY_ID: ${{ secrets.ALPACA_KEY_ID }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Configure email now; add Slack later by adding the secret.
+          # Any channel whose secrets are present will be used.
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          HEALTHCHECK_URL: ${{ secrets.HEALTHCHECK_URL }}
+        run: python monitor.py
+
+      - name: Commit state
+        # Runs even if the monitor step failed, so the repo still shows activity
+        # and the 60-day auto-disable timer keeps getting reset.
+        if: always()
+        run: |
+          git config user.name  "readout-monitor"
+          git config user.email "actions@github.com"
+          # Heartbeat guarantees something to commit even if monitor.py crashed
+          # before writing state.json.
+          date -u +%Y-%m-%dT%H:%M:%SZ > .heartbeat
+          git add state.json .heartbeat
+          git commit -m "state: $(date -u +%Y-%m-%dT%H:%M:%SZ)" || echo "nothing to commit"
+          git pull --rebase --autostash origin ${{ github.ref_name }} || true
+          git push
