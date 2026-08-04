@@ -64,7 +64,6 @@ KEYWORDS = [
     "clinical data", "trial results", "study results", "efficacy",
     "announces positive", "announces negative", "reports positive",
     "pivotal", "registrational", "presented at", "late-breaking",
-    "endpoint", "study", "trial",
     "durable response", "complete response", "well tolerated",
     "clinical hold lifted",
 ]
