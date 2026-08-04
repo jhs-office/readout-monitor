@@ -1,5 +1,6 @@
 name: Readout Monitor
 
+# Touched to force GitHub to re-register the schedule trigger.
 on:
   schedule:
     # Every 15 minutes, offset from :00/:15/:30/:45 — GitHub docs flag those exact
