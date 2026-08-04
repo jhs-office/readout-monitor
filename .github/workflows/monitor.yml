@@ -2,8 +2,10 @@ name: Readout Monitor
 
 on:
   schedule:
-    # Every 15 minutes. GitHub cron is best-effort — expect 5–30 min of extra lag.
-    - cron: "*/15 * * * *"
+    # Every 15 minutes, offset from :00/:15/:30/:45 — GitHub docs flag those exact
+    # marks as high-load times (everyone's cron fires there), which can queue
+    # scheduled runs well past the usual best-effort lag.
+    - cron: "6,21,36,51 * * * *"
   workflow_dispatch: {}   # lets you trigger a run by hand from the Actions tab
 
 # Required so the job can push state.json back to the repo.
