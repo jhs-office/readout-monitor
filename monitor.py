@@ -3,7 +3,7 @@ Clinical trial readout monitor.
 
 Polls Alpaca's Benzinga-sourced news feed for a watchlist of tickers, filters for
 likely trial-readout announcements, has Claude classify the survivors against the
-specific events you're tracking, and pushes alerts to Telegram.
+specific events you're tracking, and pushes alerts to Slack and/or email.
 
 Designed to run on a GitHub Actions cron. State lives in state.json, which is
 committed back to the repo every run (this also resets GitHub's 60-day
