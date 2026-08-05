@@ -10,6 +10,7 @@ committed back to the repo every run (this also resets GitHub's 60-day
 scheduled-workflow inactivity timer).
 """
 
+import html
 import json
 import os
 import sys
@@ -282,23 +283,35 @@ def subject_line(a):
     return f"{a['icon']} {a['company']} ({a['tickers']}) — {a['headline']}"
 
 
+def esc_html(v):
+    """Article/model text is untrusted — never interpolate it into HTML raw."""
+    return html.escape(str(v), quote=True)
+
+
+def esc_mrkdwn(v):
+    """Slack mrkdwn gives special meaning to &, <, > (e.g. <!channel>, <@user>)."""
+    return str(v).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+
 # ---- Slack -----------------------------------------------------------
 
 def send_slack(a):
+    # header blocks are plain_text — Slack doesn't parse mrkdwn syntax there,
+    # so no escaping needed. Every other block below is mrkdwn and must escape
+    # article/model text, since &, <, > have special meaning (e.g. <!channel>).
     blocks = [
         {"type": "header", "text": {"type": "plain_text",
-         # header blocks are plain text and cap at 150 chars
          "text": f"{a['icon']} {a['company']} ({a['tickers']})"[:150]}},
         {"type": "section", "text": {"type": "mrkdwn",
-         "text": f"*<{a['url']}|{a['headline']}>*"}},
+         "text": f"*<{esc_mrkdwn(a['url'])}|{esc_mrkdwn(a['headline'])}>*"}},
     ]
     if a["one_line"]:
         blocks.append({"type": "context",
-                       "elements": [{"type": "mrkdwn", "text": a["one_line"]}]})
+                       "elements": [{"type": "mrkdwn", "text": esc_mrkdwn(a["one_line"])}]})
     blocks.append({"type": "section", "fields": [
-        {"type": "mrkdwn", "text": f"*{k}*\n{v}"} for k, v in a["fields"]]})
+        {"type": "mrkdwn", "text": f"*{esc_mrkdwn(k)}*\n{esc_mrkdwn(v)}"} for k, v in a["fields"]]})
     blocks.append({"type": "context", "elements": [{"type": "mrkdwn",
-                   "text": f"{a['source']} · {a['published']}"}]})
+                   "text": f"{esc_mrkdwn(a['source'])} · {esc_mrkdwn(a['published'])}"}]})
 
     payload = {"text": subject_line(a), "blocks": blocks}
     body = json.dumps(payload).encode()
@@ -313,18 +326,18 @@ def send_slack(a):
 
 def email_html(a):
     rows = "".join(
-        f"<tr><td style='padding:4px 16px 4px 0;color:#666;white-space:nowrap'>{k}</td>"
-        f"<td style='padding:4px 0'><b>{v}</b></td></tr>"
+        f"<tr><td style='padding:4px 16px 4px 0;color:#666;white-space:nowrap'>{esc_html(k)}</td>"
+        f"<td style='padding:4px 0'><b>{esc_html(v)}</b></td></tr>"
         for k, v in a["fields"]
     )
     return f"""<div style="font-family:-apple-system,Segoe UI,Helvetica,sans-serif;max-width:620px">
-  <p style="font-size:20px;margin:0 0 4px">{a['icon']} <b>{a['company']}</b>
-     <span style="color:#666">({a['tickers']})</span></p>
+  <p style="font-size:20px;margin:0 0 4px">{a['icon']} <b>{esc_html(a['company'])}</b>
+     <span style="color:#666">({esc_html(a['tickers'])})</span></p>
   <p style="font-size:17px;line-height:1.4;margin:12px 0">
-     <a href="{a['url']}" style="color:#0b5cff;text-decoration:none">{a['headline']}</a></p>
-  <p style="color:#444;font-style:italic;margin:12px 0">{a['one_line']}</p>
+     <a href="{esc_html(a['url'])}" style="color:#0b5cff;text-decoration:none">{esc_html(a['headline'])}</a></p>
+  <p style="color:#444;font-style:italic;margin:12px 0">{esc_html(a['one_line'])}</p>
   <table style="font-size:14px;border-collapse:collapse;margin-top:16px">{rows}</table>
-  <p style="color:#999;font-size:12px;margin-top:20px">{a['source']} · {a['published']}</p>
+  <p style="color:#999;font-size:12px;margin-top:20px">{esc_html(a['source'])} · {esc_html(a['published'])}</p>
 </div>"""
 
 
