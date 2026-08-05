@@ -13,9 +13,11 @@ scheduled-workflow inactivity timer).
 import html
 import json
 import os
+import re
 import sys
 import urllib.parse
 import urllib.request
+from html.parser import HTMLParser
 from datetime import datetime, timedelta, timezone
 
 # ---------------------------------------------------------------- config
@@ -140,10 +142,55 @@ def fetch_news(symbols, start_iso):
 
 # ---------------------------------------------------------------- filter
 
+class _TextExtractor(HTMLParser):
+    """Pulls plain text out of Benzinga's HTML article body."""
+
+    SKIP_TAGS = {"script", "style"}
+
+    def __init__(self):
+        super().__init__()
+        self.parts = []
+        self._skip_depth = 0
+
+    def handle_starttag(self, tag, attrs):
+        if tag in self.SKIP_TAGS:
+            self._skip_depth += 1
+
+    def handle_endtag(self, tag):
+        if tag in self.SKIP_TAGS and self._skip_depth > 0:
+            self._skip_depth -= 1
+
+    def handle_data(self, data):
+        if self._skip_depth == 0:
+            self.parts.append(data)
+
+    def text(self):
+        return re.sub(r"\s+", " ", "".join(self.parts)).strip()
+
+
+def strip_html(raw):
+    if not raw:
+        return ""
+    try:
+        parser = _TextExtractor()
+        parser.feed(raw)
+        parser.close()
+        return parser.text()
+    except Exception:
+        return re.sub(r"<[^>]+>", " ", raw).strip()
+
+
+def article_body(article):
+    """Full article text when Alpaca's include_content gave us one, else the
+    short Benzinga summary. Filtering on summary alone misses readout details
+    that only appear in the body."""
+    return strip_html(article.get("content")) or (article.get("summary") or "")
+
+
 def keyword_hit(article):
     blob = " ".join([
         article.get("headline") or "",
-        article.get("summary") or "",
+        article_body(article)[:20000],
     ]).lower()
     return any(k in blob for k in KEYWORDS)
 
@@ -178,7 +225,7 @@ Headline: {headline}
 Source: {source}
 Published: {created_at}
 Symbols: {symbols}
-Summary: {summary}
+Article text: {body}
 </article>
 
 <tracked_events>
@@ -202,7 +249,7 @@ def classify(article, events):
         source=article.get("source", ""),
         created_at=article.get("created_at", ""),
         symbols=", ".join(article.get("symbols", [])),
-        summary=(article.get("summary") or "")[:2000],
+        body=article_body(article)[:4000],
         events=json.dumps(events, indent=2)[:6000],
     )
     try:
