@@ -50,6 +50,15 @@ MODEL = "claude-sonnet-4-6"
 
 WATCHLIST_PATH = "watchlist.json"
 STATE_PATH = "state.json"
+WEBSITES_PATH = "websites.json"
+
+# Kept separate from watchlist.json since it's stable company info, not
+# spreadsheet-derived -- re-running build_watchlist.py must not wipe it out.
+try:
+    with open(WEBSITES_PATH) as f:
+        WEBSITES = json.load(f)
+except (FileNotFoundError, json.JSONDecodeError):
+    WEBSITES = {}
 
 SYMBOL_CHUNK = 50        # symbols per API request
 LOOKBACK_FLOOR_MIN = 90  # on first run / stale state, look back this far
@@ -310,6 +319,7 @@ def build_alert(article, verdict, events):
     return {
         "icon": OUTCOME_ICON.get(verdict.get("outcome"), "⚪"),
         "company": tracked.get("company") or "Unknown",
+        "company_url": WEBSITES.get(tracked.get("ticker")),
         "tickers": tickers,
         "headline": article.get("headline", ""),
         "url": article.get("url", ""),
@@ -353,6 +363,9 @@ def send_slack(a):
         {"type": "section", "text": {"type": "mrkdwn",
          "text": f"*<{esc_mrkdwn(a['url'])}|{esc_mrkdwn(a['headline'])}>*"}},
     ]
+    if a.get("company_url"):
+        blocks.append({"type": "context", "elements": [{"type": "mrkdwn",
+                       "text": f"🏢 <{esc_mrkdwn(a['company_url'])}|{esc_mrkdwn(a['company'])} website>"}]})
     if a["one_line"]:
         blocks.append({"type": "context",
                        "elements": [{"type": "mrkdwn", "text": esc_mrkdwn(a["one_line"])}]})
@@ -378,8 +391,13 @@ def email_html(a):
         f"<td style='padding:4px 0'><b>{esc_html(v)}</b></td></tr>"
         for k, v in a["fields"]
     )
+    company_html = (
+        f'<a href="{esc_html(a["company_url"])}" style="color:#0b5cff;text-decoration:none">'
+        f'{esc_html(a["company"])}</a>'
+        if a.get("company_url") else esc_html(a["company"])
+    )
     return f"""<div style="font-family:-apple-system,Segoe UI,Helvetica,sans-serif;max-width:620px">
-  <p style="font-size:20px;margin:0 0 4px">{a['icon']} <b>{esc_html(a['company'])}</b>
+  <p style="font-size:20px;margin:0 0 4px">{a['icon']} <b>{company_html}</b>
      <span style="color:#666">({esc_html(a['tickers'])})</span></p>
   <p style="font-size:17px;line-height:1.4;margin:12px 0">
      <a href="{esc_html(a['url'])}" style="color:#0b5cff;text-decoration:none">{esc_html(a['headline'])}</a></p>
@@ -391,9 +409,11 @@ def email_html(a):
 
 def email_text(a):
     fields = "\n".join(f"{k}: {v}" for k, v in a["fields"])
-    return (f"{a['icon']} {a['company']} ({a['tickers']})\n\n"
+    company_line = (f"{a['company']} ({a['tickers']}) — {a['company_url']}"
+                     if a.get("company_url") else f"{a['company']} ({a['tickers']})")
+    return (f"{a['icon']} {company_line}\n\n"
             f"{a['headline']}\n\n{a['one_line']}\n\n{fields}\n\n"
-            f"{a['url']}\n\n{a['source']} · {a['published']}")
+            f"Article: {a['url']}\n\n{a['source']} · {a['published']}")
 
 
 def send_email_resend(a):
