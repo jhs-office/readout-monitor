@@ -264,6 +264,7 @@ def classify(article, events):
                 "max_tokens": 1000,
                 "messages": [{"role": "user", "content": prompt}],
             },
+            method="POST",
         )
         text = "".join(
             b.get("text", "") for b in resp.get("content", []) if b.get("type") == "text"
