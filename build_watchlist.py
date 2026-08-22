@@ -12,7 +12,7 @@ import sys
 
 import pandas as pd
 
-SHEET = "LifeSci Clinical Trial Events"
+SHEET = "MASTER TRIAL READOUTS"
 
 
 def clean(v):
@@ -35,6 +35,8 @@ def clean_phase(v):
 
 def split_tickers(raw):
     """'PRTA / BMY' -> ['PRTA', 'BMY']. Partnered assets can be announced by either party."""
+    if raw is None or (isinstance(raw, float) and pd.isna(raw)):
+        return []  # blank cell -- str(nan) would otherwise become the literal "NAN"
     parts = re.split(r"[/,;]", str(raw))
     out = []
     for p in parts:
