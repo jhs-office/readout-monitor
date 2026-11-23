@@ -27,7 +27,7 @@
       "indication": "Alzheimer's disease",
       "phase": "2",
       "product": "Sabirnetug",
-      "timing": "Late 2026"
+      "timing": "Read Out"
     }
   ],
   "ABSI": [
@@ -78,7 +78,7 @@
       "indication": "Alzheimer's disease psychosis",
       "phase": "2",
       "product": "Remlifanserin",
-      "timing": "September to October 2026"
+      "timing": "Read Out"
     }
   ],
   "ACIU": [
@@ -98,19 +98,10 @@
       "indication": "Parkinson's disease",
       "phase": "2",
       "product": "ACI-7104.056",
-      "timing": "H2 2026"
+      "timing": "Read Out"
     }
   ],
   "ACRS": [
-    {
-      "company": "Aclaris",
-      "event": "Topline data from the Phase 2 trial",
-      "event_type": "Topline Readout",
-      "indication": "Moderate-to-severe atopic dermatitis (AD)",
-      "phase": "2",
-      "product": "Bosakitug (ATI-045)",
-      "timing": "Q4 2026"
-    },
     {
       "company": "Aclaris",
       "event": "Topline data from the Phase 1b proof-of-concept trial",
@@ -118,7 +109,7 @@
       "indication": "Moderate-to-severe atopic dermatitis (AD)",
       "phase": "1",
       "product": "ATI-052",
-      "timing": "H2 2026"
+      "timing": "Read Out"
     },
     {
       "company": "Aclaris",
@@ -127,7 +118,16 @@
       "indication": "Asthma",
       "phase": "1",
       "product": "ATI-052",
-      "timing": "H2 2026"
+      "timing": "Read Out"
+    },
+    {
+      "company": "Aclaris",
+      "event": "Topline data from the Phase 2 trial",
+      "event_type": "Topline Readout",
+      "indication": "Moderate-to-severe atopic dermatitis (AD)",
+      "phase": "2",
+      "product": "Bosakitug (ATI-045)",
+      "timing": "Read Out"
     }
   ],
   "ADAG": [
@@ -175,21 +175,21 @@
   "AGMB": [
     {
       "company": "Agomab",
-      "event": "Full Phase 2a OLE STENOVA data",
-      "event_type": "Updated / Follow-up Data",
-      "indication": "Fibrostenosing Crohn's Disease (FSCD)",
-      "phase": "2",
-      "product": "Ontunisertib (AGMB-129)",
-      "timing": "H2 2026"
-    },
-    {
-      "company": "Agomab",
       "event": "Topline data Phase 1b trial",
       "event_type": "Topline Readout",
       "indication": "Idiopathic pulmonary fibrosis (IPF)",
       "phase": "1",
       "product": "AGMB-447",
-      "timing": "H2 2026"
+      "timing": "Read Out"
+    },
+    {
+      "company": "Agomab",
+      "event": "Full Phase 2a OLE STENOVA data",
+      "event_type": "Updated / Follow-up Data",
+      "indication": "Fibrostenosing Crohn's Disease (FSCD)",
+      "phase": "2",
+      "product": "Ontunisertib (AGMB-129)",
+      "timing": "Read Out"
     }
   ],
   "AKTS": [
@@ -241,6 +241,15 @@
       "phase": "2",
       "product": "Alixorexton",
       "timing": "Q4 2026"
+    },
+    {
+      "company": "Alkermes",
+      "event": "Topline results from Phase 2 Vibrance-3 trial",
+      "event_type": "Topline Readout",
+      "indication": "Idiopathic Hypersomnia (IH)",
+      "phase": "2",
+      "product": "Alixorexton (ALKS 2680)",
+      "timing": "YE 2026"
     }
   ],
   "ALLO": [
@@ -280,7 +289,7 @@
       "indication": "Moderately-to-severely active, autoantibody-positive systemic lupus erythematosus (SLE)",
       "phase": "2",
       "product": "Envudeucitinib",
-      "timing": "Q3 2026"
+      "timing": "Read Out"
     }
   ],
   "ALT": [
@@ -406,7 +415,7 @@
       "indication": "Non-Hodgkin lymphoma",
       "phase": "1",
       "product": "ARV-393",
-      "timing": "Mid-2027"
+      "timing": "December 12-15, 2026"
     },
     {
       "company": "Arvinas",
@@ -481,21 +490,21 @@
   "AUTL": [
     {
       "company": "Autolus",
+      "event": "Report initial Phase 1 ALARIC data",
+      "event_type": "Initial Data Readout",
+      "indication": "Light-chain amyloidosis",
+      "phase": "1",
+      "product": "AUTO8",
+      "timing": "Read Out"
+    },
+    {
+      "company": "Autolus",
       "event": "Report initial Phase 1 BOBCAT data",
       "event_type": "Initial Data Readout",
       "indication": "Refractory progressive multiple sclerosis (MS)",
       "phase": "1",
       "product": "Obecabtagene autoleucel (obe-cel)",
       "timing": "Q1 2027 (initial); 2H 2027 (full)"
-    },
-    {
-      "company": "Autolus",
-      "event": "Report initial Phase 1 ALARIC data",
-      "event_type": "Initial Data Readout",
-      "indication": "Light-chain amyloidosis",
-      "phase": "1",
-      "product": "AUTO8",
-      "timing": "YE 2026"
     },
     {
       "company": "Autolus",
@@ -515,7 +524,7 @@
       "indication": "1L locally advanced or metastatic non-squamous non-small cell lung cancer (NSCLC) with EGFR exon 20 insertion mutations",
       "phase": "3",
       "product": "Firmonertinib",
-      "timing": "Mid-2026"
+      "timing": "Read Out"
     }
   ],
   "AVIR": [
@@ -637,7 +646,7 @@
       "indication": "Glycogen storage disease type Ia (GSDIa)",
       "phase": "1",
       "product": "BEAM-301",
-      "timing": "2026"
+      "timing": "Read Out"
     }
   ],
   "BHVN": [
@@ -712,7 +721,7 @@
       "indication": "Oculopharyngeal muscular dystrophy (OPMD)-related dysphagia",
       "phase": "1",
       "product": "BB-301",
-      "timing": "H2 2026"
+      "timing": "Read Out"
     }
   ],
   "CABA": [
@@ -723,19 +732,10 @@
       "indication": "Pemphigus vulgaris (PV); Systemic lupus erythematosus (SLE)",
       "phase": "1",
       "product": "Rese-cel (CABA-201)",
-      "timing": "H2 2026"
+      "timing": "Read Out"
     }
   ],
   "CATX": [
-    {
-      "company": "Perspective",
-      "event": "Phase 1/2a data update",
-      "event_type": "Updated / Follow-up Data",
-      "indication": "Melanoma",
-      "phase": "1",
-      "product": "VMT01",
-      "timing": "Late 2026"
-    },
     {
       "company": "Perspective",
       "event": "Phase 1/2a efficacy data from full Cohort 2 and Cohort 3",
@@ -743,7 +743,16 @@
       "indication": "Advanced, unresectable, or metastatic neuroendocrine tumors (NET)",
       "phase": "1",
       "product": "VMT-\u03b1-NET",
-      "timing": "Late 2026"
+      "timing": "Read Out"
+    },
+    {
+      "company": "Perspective",
+      "event": "Phase 1/2a data update",
+      "event_type": "Updated / Follow-up Data",
+      "indication": "Melanoma",
+      "phase": "1",
+      "product": "VMT01",
+      "timing": "Read Out"
     },
     {
       "company": "Perspective",
@@ -778,15 +787,6 @@
   "CCCC": [
     {
       "company": "C4",
-      "event": "Completion of enrollment in Phase 2 MOMENTUM trial in combination with dexamethasone",
-      "event_type": "Enrollment Milestone",
-      "indication": "Multiple myeloma",
-      "phase": "2",
-      "product": "Cemsidomide",
-      "timing": "Q1 2027"
-    },
-    {
-      "company": "C4",
       "event": "Phase 1b data from all cohorts in combination with elranatamab",
       "event_type": "Initial Data Readout",
       "indication": "Multiple myeloma",
@@ -804,6 +804,26 @@
       "timing": "H2 2027"
     }
   ],
+  "CELC": [
+    {
+      "company": "Celcuity Inc",
+      "event": "Further VIKTORIA-1 updates at medical conferences",
+      "event_type": "Updated / Follow-up Data",
+      "indication": "2L HR+/HER2- Advanced Breast Cancer (WT and MT)",
+      "phase": "3",
+      "product": "Gedatolisib (REVTORPYK)",
+      "timing": "Q4 2026"
+    },
+    {
+      "company": "Celcuity Inc",
+      "event": "CELC-G-201 updated clinical data from dose-finding portion",
+      "event_type": "Updated / Follow-up Data",
+      "indication": "Metastatic Castration-Resistant Prostate Cancer",
+      "phase": "2",
+      "product": "Gedatolisib (REVTORPYK) + darolutamide",
+      "timing": "Q4 2026"
+    }
+  ],
   "CGEM": [
     {
       "company": "Cullinan",
@@ -812,7 +832,7 @@
       "indication": "Treatment-refractory autoimmune diseases",
       "phase": "1",
       "product": "Velinotamig",
-      "timing": "Q4 2026"
+      "timing": "Read Out"
     },
     {
       "company": "Cullinan",
@@ -881,7 +901,7 @@
       "indication": "2L gastric cancers (GC/GEJ/EAC)",
       "phase": "1",
       "product": "Tagmokitug (formerly CHS114)",
-      "timing": "H2 2026"
+      "timing": "Read Out"
     },
     {
       "company": "Coherus Oncology",
@@ -890,16 +910,7 @@
       "indication": "2L head and neck squamous cell carcinoma (HNSCC)",
       "phase": "1",
       "product": "Tagmokitug (formerly CHS114)",
-      "timing": "H2 2026"
-    },
-    {
-      "company": "Coherus Oncology",
-      "event": "Interim data from the Phase 2 trial in combination with LOQTORZI (toripalimab) and bevacizumab",
-      "event_type": "Interim Readout",
-      "indication": "1L hepatocellular carcinoma (HCC)",
-      "phase": "2",
-      "product": "Casdozokitug",
-      "timing": "H2 2026"
+      "timing": "Read Out"
     },
     {
       "company": "Coherus Oncology",
@@ -908,7 +919,7 @@
       "indication": "1L and 2L esophageal squamous cell carcinoma (ESCC)",
       "phase": "1",
       "product": "Tagmokitug (formerly CHS114)",
-      "timing": "H2 2026"
+      "timing": "Read Out"
     },
     {
       "company": "Coherus Oncology",
@@ -917,6 +928,15 @@
       "indication": "4L+ MSS CRC",
       "phase": "1",
       "product": "Tagmokitug (formerly CHS114)",
+      "timing": "Read Out"
+    },
+    {
+      "company": "Coherus Oncology",
+      "event": "Interim data from the Phase 2 trial in combination with LOQTORZI (toripalimab) and bevacizumab",
+      "event_type": "Interim Readout",
+      "indication": "1L hepatocellular carcinoma (HCC)",
+      "phase": "2",
+      "product": "Casdozokitug",
       "timing": "H2 2026"
     },
     {
@@ -946,7 +966,7 @@
       "indication": "Chronic spontaneous urticaria (CSU)",
       "phase": "3",
       "product": "Barzolvolimab",
-      "timing": "September / October 2026"
+      "timing": "Read Out"
     },
     {
       "company": "Celldex",
@@ -955,7 +975,7 @@
       "indication": "Moderate-to-severe atopic dermatitis (AD)",
       "phase": "2",
       "product": "Barzolvolimab",
-      "timing": "Late 2026"
+      "timing": "Read Out"
     }
   ],
   "CLYM": [
@@ -966,7 +986,7 @@
       "indication": "Primary membranous nephropathy",
       "phase": "2",
       "product": "Budoprutug",
-      "timing": "Q4 2026"
+      "timing": "Read Out"
     },
     {
       "company": "Climb",
@@ -1017,7 +1037,7 @@
       "indication": "Asthma",
       "phase": "2",
       "product": "Rademikibart",
-      "timing": "Early September 2026"
+      "timing": "Read Out"
     },
     {
       "company": "Connect",
@@ -1026,7 +1046,7 @@
       "indication": "Chronic Obstructive Pulmonary Disease (COPD)",
       "phase": "2",
       "product": "Rademikibart",
-      "timing": "Shortly After Early September 2026"
+      "timing": "Read Out"
     }
   ],
   "CNTX": [
@@ -1040,16 +1060,27 @@
       "timing": "Program Discontinued"
     }
   ],
-  "CORT": [
+  "COGT": [
     {
-      "company": "Corcept",
-      "event": "Topline data from Phase 2b trial expected",
-      "event_type": "Topline Readout",
-      "indication": "Metabolic dysfunction-associated steatohepatitis (MASH)",
+      "company": "Cogent Biosciences Inc",
+      "event": "Preliminary results from 'avapritinib switch' SUMMIT extension",
+      "event_type": "Initial Data Readout",
+      "indication": "Non-Advanced SM (avapritinib switch)",
       "phase": "2",
-      "product": "Miricorilant",
+      "product": "Bezuclastinib (CGT9486)",
       "timing": "YE 2026"
     },
+    {
+      "company": "Cogent Biosciences Inc",
+      "event": "Clinical data from Phase 1/2 dose escalation",
+      "event_type": "Initial Data Readout",
+      "indication": "Solid Tumors with FGFR2 or FGFR3 Alterations",
+      "phase": "1",
+      "product": "CGT4859",
+      "timing": "2026 (guidance not repeated since Jan)"
+    }
+  ],
+  "CORT": [
     {
       "company": "Corcept",
       "event": "Topline results from Phase 2 trial (BELLA Part A) expected",
@@ -1057,6 +1088,15 @@
       "indication": "Platinum-resistant ovarian cancer",
       "phase": "2",
       "product": "Lifyorli (relacorilant)",
+      "timing": "Read Out"
+    },
+    {
+      "company": "Corcept",
+      "event": "Topline data from Phase 2b trial expected",
+      "event_type": "Topline Readout",
+      "indication": "Metabolic dysfunction-associated steatohepatitis (MASH)",
+      "phase": "2",
+      "product": "Miricorilant",
       "timing": "YE 2026"
     }
   ],
@@ -1079,7 +1119,7 @@
       "indication": "Obesity",
       "phase": "1",
       "product": "CRB-913",
-      "timing": "September 2026"
+      "timing": "Read Out"
     },
     {
       "company": "Corbus",
@@ -1110,7 +1150,16 @@
       "indication": "Severe hypertriglyceridemia (sHTG), heterozygous, refractory hypercholesterolemia",
       "phase": "1",
       "product": "CTX310",
-      "timing": "H2 2026"
+      "timing": "Read Out"
+    },
+    {
+      "company": "CRISPR",
+      "event": "Initial data from Phase 1 studies across multiple indications",
+      "event_type": "Initial Data Readout",
+      "indication": "Rheumatology, ITP/wAIHA, Heme malignances",
+      "phase": "1",
+      "product": "Zugo-cel (zugocabtagene geleucel; formerly CTX112)",
+      "timing": "Read Out"
     },
     {
       "company": "Crispr / Sirius",
@@ -1120,15 +1169,26 @@
       "phase": "2",
       "product": "CTX611 / SRSD107",
       "timing": "H2 2026"
+    }
+  ],
+  "CRVO": [
+    {
+      "company": "CervoMed",
+      "event": "Full-cohort interim biomarker data (~25 subjects)",
+      "event_type": "Interim Readout",
+      "indication": "Nonfluent variant primary progressive aphasia (nfvPPA)",
+      "phase": "2",
+      "product": "Neflamapimod",
+      "timing": "October 8-11"
     },
     {
-      "company": "CRISPR",
-      "event": "Initial data from Phase 1 studies across multiple indications",
-      "event_type": "Initial Data Readout",
-      "indication": "Rheumatology, ITP/wAIHA, Heme malignances",
-      "phase": "1",
-      "product": "Zugo-cel (zugocabtagene geleucel; formerly CTX112)",
-      "timing": "H2 2026"
+      "company": "CervoMed",
+      "event": "Full topline data from Phase 2a nfvPPA trial (CRVO24-NFD-701)",
+      "event_type": "Topline Readout",
+      "indication": "Nonfluent variant primary progressive aphasia (nfvPPA)",
+      "phase": "2",
+      "product": "Neflamapimod (VX-745)",
+      "timing": "Q2 2027"
     }
   ],
   "CRVS": [
@@ -1166,7 +1226,7 @@
       "indication": "Autoimmune lymphoproliferative syndrome (ALPS)",
       "phase": "2",
       "product": "Soquelitinib",
-      "timing": "No firm timing"
+      "timing": "December 12-15, 2026"
     }
   ],
   "CTMX": [
@@ -1208,7 +1268,7 @@
       "indication": "Generalized Anxiety Disorder (GAD)",
       "phase": "3",
       "product": "DT120 ODT",
-      "timing": "September 2026"
+      "timing": "Read Out"
     }
   ],
   "DMAC": [
@@ -1302,6 +1362,55 @@
       "timing": "2027"
     }
   ],
+  "DWTX": [
+    {
+      "company": "Dogwood Therapeutics",
+      "event": "Topline results from Phase 2b HALT-CINP (HAL-CINP-203) trial",
+      "event_type": "Topline Readout",
+      "indication": "Moderate-to-severe chemotherapy-induced neuropathic pain (CINP)",
+      "phase": "2",
+      "product": "Halneuron (tetrodotoxin, SC)",
+      "timing": "2026-11-01 00:00:00"
+    }
+  ],
+  "DYN": [
+    {
+      "company": "Dyne Therapeutics Inc",
+      "event": "Additional one-year ACHIEVE MAD data vs natural history",
+      "event_type": "Updated / Follow-up Data",
+      "indication": "Myotonic Dystrophy Type 1 (DM1)",
+      "phase": "2",
+      "product": "Zeleciment basivarsen (z-basivarsen, DYNE-101)",
+      "timing": "Sept 29 - Oct 3, 2026 (WMS / AANEM)"
+    },
+    {
+      "company": "Dyne Therapeutics Inc",
+      "event": "ACHIEVE registrational expansion cohort topline (71 participants)",
+      "event_type": "Topline Readout",
+      "indication": "Myotonic Dystrophy Type 1 (DM1)",
+      "phase": "2",
+      "product": "Zeleciment basivarsen (z-basivarsen, DYNE-101)",
+      "timing": "Q1 2027"
+    },
+    {
+      "company": "Dyne Therapeutics Inc",
+      "event": "Topline data from confirmatory Phase 3 HARMONIA trial (5xSTS at week 49)",
+      "event_type": "Topline Readout",
+      "indication": "Myotonic Dystrophy Type 1 (DM1)",
+      "phase": "3",
+      "product": "Zeleciment basivarsen (z-basivarsen, DYNE-101)",
+      "timing": "Est. H2 2028 (no company guidance)"
+    },
+    {
+      "company": "Dyne Therapeutics Inc",
+      "event": "Topline data from confirmatory Phase 3 FORZETTO trial (rise-from-floor velocity at week 73)",
+      "event_type": "Topline Readout",
+      "indication": "Duchenne muscular dystrophy (DMD) amenable to exon 51 skipping, ambulatory males 4\u201318",
+      "phase": "3",
+      "product": "Zeleciment rostudirsen (z-rostudirsen, DYNE-251)",
+      "timing": "Est. H2 2029 (no company guidance)"
+    }
+  ],
   "EDIT": [
     {
       "company": "Editas Medicine",
@@ -1321,7 +1430,7 @@
       "indication": "BCG-unresponsive non-muscle invasive bladder cancer (NMIBC) with carcinoma in situ (CIS)",
       "phase": "1",
       "product": "Detalimogene Voraplasmid",
-      "timing": "H2 2026"
+      "timing": "Read Out"
     }
   ],
   "ENTA": [
@@ -1358,21 +1467,21 @@
   "ERAS": [
     {
       "company": "Erasca",
+      "event": "Data from the Phase 1 dose expansion trial",
+      "event_type": "Initial Data Readout",
+      "indication": "RAS-mutant solid tumors",
+      "phase": "1",
+      "product": "ERAS-0015",
+      "timing": "Read Out"
+    },
+    {
+      "company": "Erasca",
       "event": "Initial monotherapy data from the Phase 1 trial",
       "event_type": "Initial Data Readout",
       "indication": "KRAS-mutant solid tumors",
       "phase": "1",
       "product": "ERAS-4001",
       "timing": "H2 2026"
-    },
-    {
-      "company": "Erasca",
-      "event": "Data from the Phase 1 dose expansion trial",
-      "event_type": "Initial Data Readout",
-      "indication": "RAS-mutant solid tumors",
-      "phase": "1",
-      "product": "ERAS-0015",
-      "timing": "H1 2027"
     }
   ],
   "EVMN": [
@@ -1383,7 +1492,7 @@
       "indication": "Moderate-to-severe atopic dermatitis (AD)",
       "phase": "2",
       "product": "EVO756",
-      "timing": "Q3 2026"
+      "timing": "Read Out"
     }
   ],
   "EWTX": [
@@ -1406,6 +1515,17 @@
       "timing": "H1 2027"
     }
   ],
+  "EXEL": [
+    {
+      "company": "Exelixis",
+      "event": "Topline DFS data from Phase 3 STELLAR-316 trial",
+      "event_type": "Topline Readout",
+      "indication": "Resected stage II/III colorectal cancer, ctDNA MRD-positive after definitive therapy",
+      "phase": "3",
+      "product": "Zanzalintinib (XL092) \u00b1 pembrolizumab",
+      "timing": "Est. 2029 (no company guidance)"
+    }
+  ],
   "EYPT": [
     {
       "company": "Eyepoint",
@@ -1423,7 +1543,7 @@
       "indication": "Wet age-related macular degeneration (Wet AMD)",
       "phase": "3",
       "product": "Duravyu",
-      "timing": "Q4 2026"
+      "timing": "Read Out"
     },
     {
       "company": "Eyepoint",
@@ -1501,7 +1621,7 @@
       "indication": "Endometrial cancer",
       "phase": "2",
       "product": "PIKTOR (PIK-201) (serabelisib + sapanisertib)",
-      "timing": "YE 2026"
+      "timing": "Read Out"
     }
   ],
   "GENB": [
@@ -1522,15 +1642,6 @@
       "phase": "1",
       "product": "GB-5267",
       "timing": "2027"
-    },
-    {
-      "company": "Generate Biosciences",
-      "event": "Full enrollment in Phase 3 SOLAIRIA-1 and SOLAIRIA-2 trials",
-      "event_type": "Enrollment Milestone",
-      "indication": "COPD",
-      "phase": "3",
-      "product": "GB-0895",
-      "timing": "H2 2027"
     }
   ],
   "GERN": [
@@ -1541,7 +1652,7 @@
       "indication": "2L (JAKi R/R) intermediate-2 or high-risk myelofibrosis (R/R MF)",
       "phase": "3",
       "product": "Rytelo (imetelstat)",
-      "timing": "H2 2026"
+      "timing": "Discontinued"
     }
   ],
   "GLUE": [
@@ -1552,7 +1663,18 @@
       "indication": "IL-1\u03b2/NLRP3-driven inflammatory diseases",
       "phase": "1",
       "product": "MRT-8102",
-      "timing": "H2 2026"
+      "timing": "Read Out"
+    }
+  ],
+  "GMAB": [
+    {
+      "company": "Genmab (acquired Merus)",
+      "event": "Topline results from Phase 3 LiGeR-HN1 trial (dual primary endpoints OS and ORR)",
+      "event_type": "Topline Readout",
+      "indication": "First-line recurrent/metastatic PD-L1+ head and neck squamous cell carcinoma (HNSCC)",
+      "phase": "3",
+      "product": "Petosemtamab (MCLA-158 / GEN1158) + pembrolizumab",
+      "timing": "Read Out"
     }
   ],
   "GNFT": [
@@ -1602,9 +1724,27 @@
       "phase": "1",
       "product": "Olvi-Vec",
       "timing": "2026"
+    },
+    {
+      "company": "Genelux",
+      "event": "Topline results from the pivotal Phase 3 OnPrime/GOG-3076 trial, in combination with platinum-based chemotherapy and bevacizumab",
+      "event_type": "Topline Readout",
+      "indication": "Platinum-resistant and refractory ovarian cancer (PRROC)",
+      "phase": "3",
+      "product": "Olvi-Vec",
+      "timing": "H2 2026"
     }
   ],
   "GPCR": [
+    {
+      "company": "Structure",
+      "event": "Phase 1 SAD data",
+      "event_type": "Initial Data Readout",
+      "indication": "Obesity",
+      "phase": "1",
+      "product": "ACCG-2671",
+      "timing": "Read Out"
+    },
     {
       "company": "Structure",
       "event": "Topline results from SWITCH/maintenance trial from weekly injectable to aleniglipron small molecule oral",
@@ -1622,26 +1762,6 @@
       "phase": "2",
       "product": "Aleniglipron",
       "timing": "Q4 2026"
-    },
-    {
-      "company": "Structure",
-      "event": "Phase 1 SAD data",
-      "event_type": "Initial Data Readout",
-      "indication": "Obesity",
-      "phase": "1",
-      "product": "ACCG-2671",
-      "timing": "Q3 2026"
-    }
-  ],
-  "GUTS": [
-    {
-      "company": "Fractyl",
-      "event": "Topline 6-month pivotal data and potential regulatory filing",
-      "event_type": "Topline Readout",
-      "indication": "Weight maintenance",
-      "phase": "3",
-      "product": "Revita",
-      "timing": "Early Q4 2026"
     }
   ],
   "HELP": [
@@ -1652,7 +1772,7 @@
       "indication": "Major Depressive Disorder (MDD)",
       "phase": "3",
       "product": "HLP003",
-      "timing": "Q4 2026"
+      "timing": "Read Out"
     },
     {
       "company": "Helus",
@@ -1740,15 +1860,6 @@
       "phase": "3",
       "product": "IKT-001",
       "timing": "H1 2027"
-    },
-    {
-      "company": "Inhibikase",
-      "event": "Last patient enrolled in IMPROVE-PAH Part A",
-      "event_type": "Enrollment Milestone",
-      "indication": "Pulmonary arterial hypertension (PAH)",
-      "phase": null,
-      "product": "IKT-001",
-      "timing": "H2 2027"
     }
   ],
   "IMA": [
@@ -1794,12 +1905,12 @@
   "IMMX": [
     {
       "company": "Immix",
-      "event": "Phase 3 Randomized Controlled Trial",
+      "event": "NEXICART-2 (NCT06097832) is a multi-site U.S. Phase 2 clinical trial of sterically-optimized CAR-T NXC-201 in relapsed/refractory AL Amyloidosis, with a registrational design.",
       "event_type": "Topline Readout",
       "indication": "AL amyloidosis",
-      "phase": "3",
+      "phase": "2026-02-03 00:00:00",
       "product": "NXC-201",
-      "timing": "H1 2027"
+      "timing": "Mid-2027"
     }
   ],
   "IMNM": [
@@ -1827,7 +1938,16 @@
   "IMUX": [
     {
       "company": "Immunic",
-      "event": "Topline data from Phase 3 ENSURE trials",
+      "event": "Topline data from Phase 3 ENSURE-1 trial",
+      "event_type": "Topline Readout",
+      "indication": "Relapsing multiple sclerosis (RMS)",
+      "phase": "3",
+      "product": "Vidofludimus calcium (IMU-838)",
+      "timing": "YE 2026"
+    },
+    {
+      "company": "Immunic",
+      "event": "Topline data from Phase 3 ENSURE-2 trial",
       "event_type": "Topline Readout",
       "indication": "Relapsing multiple sclerosis (RMS)",
       "phase": "3",
@@ -1843,7 +1963,7 @@
       "indication": "Cutaneous lupus erythematosus (CLE)",
       "phase": "2",
       "product": "IMVT-1402",
-      "timing": "H2 2026"
+      "timing": "Read Out"
     },
     {
       "company": "Immunovant",
@@ -1872,7 +1992,58 @@
       "indication": "1L PD-L1 high head and neck squamous cell carcinoma (HNSCC)",
       "phase": "2",
       "product": "INBRX-106",
-      "timing": "Q3 2026"
+      "timing": "Read Out"
+    }
+  ],
+  "INSM": [
+    {
+      "company": "Insmed",
+      "event": "Topline data from Phase 3 PALM-PAH trial (6MWD at week 24)",
+      "event_type": "Topline Readout",
+      "indication": "Pulmonary arterial hypertension (PAH, WHO Group 1)",
+      "phase": "3",
+      "product": "Treprostinil palmitil inhalation powder (TPIP)",
+      "timing": "Est. H2 2029 (no company guidance)"
+    }
+  ],
+  "IONS": [
+    {
+      "company": "Ionis Pharmaceuticals Inc",
+      "event": "REVEAL topline",
+      "event_type": "Topline Readout",
+      "indication": "Angelman Syndrome",
+      "phase": "3",
+      "product": "Obudanersen (ION582)",
+      "timing": "H2 2027"
+    }
+  ],
+  "IOVA": [
+    {
+      "company": "Iovance Biotherapeutics Inc",
+      "event": "IOV-LUN-202 program update from pivotal cohorts",
+      "event_type": "Updated / Follow-up Data",
+      "indication": "2L+ Metastatic Non-Squamous NSCLC",
+      "phase": "2",
+      "product": "Lifileucel (Amtagvi)",
+      "timing": "Q4 2026"
+    },
+    {
+      "company": "Iovance Biotherapeutics Inc",
+      "event": "SARATOGA (IOV-SAR-201) results, ESMO oral (abstract #3725RO)",
+      "event_type": "Updated / Follow-up Data",
+      "indication": "Undifferentiated Pleomorphic Sarcoma and Dedifferentiated Liposarcoma",
+      "phase": "2",
+      "product": "Lifileucel (Amtagvi)",
+      "timing": "Oct 23-27, 2026 (ESMO)"
+    },
+    {
+      "company": "Iovance Biotherapeutics Inc",
+      "event": "Frontline melanoma combination results, ESMO oral (abstract #2072O)",
+      "event_type": "Updated / Follow-up Data",
+      "indication": "Frontline Advanced Melanoma",
+      "phase": "2",
+      "product": "Lifileucel (Amtagvi) + pembrolizumab",
+      "timing": "Oct 23-27, 2026 (ESMO)"
     }
   ],
   "IPH": [
@@ -1895,6 +2066,35 @@
       "timing": "Study discontinued; Data in 2026"
     }
   ],
+  "IRD": [
+    {
+      "company": "Opus Genetics Inc",
+      "event": "Registrational trial topline (six-month efficacy)",
+      "event_type": "Topline Readout",
+      "indication": "LCA5-Associated Inherited Retinal Disease",
+      "phase": "3",
+      "product": "OPGx-LCA5",
+      "timing": "YE 2027"
+    },
+    {
+      "company": "Opus Genetics Inc",
+      "event": "Full Cohort 1 dataset at EURETINA 2026",
+      "event_type": "Full / Detailed Data",
+      "indication": "BEST1-Related Inherited Retinal Disease",
+      "phase": "1",
+      "product": "OPGx-BEST1",
+      "timing": "Oct 1-4, 2026 (EURETINA)"
+    },
+    {
+      "company": "Opus Genetics Inc",
+      "event": "BIRD-1 Cohort 2 (4.5 x 10^9 vg/eye) three-month topline",
+      "event_type": "Initial Data Readout",
+      "indication": "BEST1-Related Inherited Retinal Disease (higher dose)",
+      "phase": "1",
+      "product": "OPGx-BEST1",
+      "timing": "Q2 2027"
+    }
+  ],
   "IRON": [
     {
       "company": "Disc",
@@ -1903,7 +2103,7 @@
       "indication": "Erythropoietic Protoporphyria (EPP)",
       "phase": "3",
       "product": "Bitopertin",
-      "timing": "Q4 2026"
+      "timing": "Read Out"
     },
     {
       "company": "Disc",
@@ -1951,17 +2151,26 @@
       "phase": "3",
       "product": "Lanifibranor",
       "timing": "Q4 2026"
+    },
+    {
+      "company": "Inventiva",
+      "event": "Topline data from Phase 3 NATiV3 trial",
+      "event_type": "Topline Readout",
+      "indication": "Metabolic dysfunction-associated steatohepatitis (MASH), F2/F3 fibrosis",
+      "phase": "3",
+      "product": "Lanifibranor (IVA337)",
+      "timing": "Q4 2026"
     }
   ],
   "IVVD": [
     {
       "company": "Invivyd",
-      "event": "Topline data from DECLARATION pivotal trial",
+      "event": "Topline data from LIBERTY pivotal trial",
       "event_type": "Topline Readout",
       "indication": "COVID-19, SARS-CoV-2 variant BA.3.2.2 (\"Cicada\")",
       "phase": "3",
       "product": "VYD2311",
-      "timing": "Late Q3 2026"
+      "timing": "Read Out"
     }
   ],
   "JANX": [
@@ -1972,7 +2181,7 @@
       "indication": "Autoimmune indications",
       "phase": "1",
       "product": "CD19-ARM",
-      "timing": "H2 2026"
+      "timing": "Read Out"
     }
   ],
   "JAZZ": [
@@ -2016,7 +2225,7 @@
       "indication": "Wet age-related macular degeneration (AMD)",
       "phase": "3",
       "product": "Zenkuda",
-      "timing": "September 2026"
+      "timing": "Read Out"
     },
     {
       "company": "Kodiak",
@@ -2025,7 +2234,7 @@
       "indication": "Wet age-related macular degeneration (AMD)",
       "phase": "3",
       "product": "KSI-501",
-      "timing": "September 2026"
+      "timing": "Read Out"
     },
     {
       "company": "Kodiak",
@@ -2141,16 +2350,16 @@
       "indication": "Multiple inflammatory diseases",
       "phase": "1",
       "product": "KT-579",
-      "timing": "Q4 2026"
+      "timing": "Read Out"
     },
     {
       "company": "Kymera",
       "event": "Topline data from Phase 2b BROADEN2 trial",
       "event_type": "Topline Readout",
-      "indication": "Atopic dermatitis",
+      "indication": "Moderate-to-severe atopic dermatitis (ages 12\u201375)",
       "phase": "2",
       "product": "KT-621",
-      "timing": "Mid-2027"
+      "timing": "Read Out"
     },
     {
       "company": "Kymera",
@@ -2190,7 +2399,7 @@
       "indication": "Plakophilin 2 Arrhythmogenic Cardiomyopathy (PKP2-ACM)",
       "phase": "1",
       "product": "LX2020",
-      "timing": "Q4 2026"
+      "timing": "Read Out"
     }
   ],
   "LXRX": [
@@ -2218,21 +2427,41 @@
   "MANE": [
     {
       "company": "Veradermics",
-      "event": "Twelve-month data from the Phase 2/3 302 trial",
-      "event_type": "Updated / Follow-up Data",
-      "indication": "Male pattern hair loss",
-      "phase": "2",
-      "product": "VDPHL01",
-      "timing": "H2 2026"
-    },
-    {
-      "company": "Veradermics",
       "event": "Topline data from the confirmatory Phase 3 304 trial",
       "event_type": "Topline Readout",
       "indication": "Male pattern hair loss",
       "phase": "3",
       "product": "VDPHL01",
-      "timing": "H2 2026"
+      "timing": "Read Out"
+    },
+    {
+      "company": "Veradermics",
+      "event": "Twelve-month data from the Phase 2/3 302 trial",
+      "event_type": "Updated / Follow-up Data",
+      "indication": "Male pattern hair loss",
+      "phase": "2",
+      "product": "VDPHL01",
+      "timing": "Read Out"
+    }
+  ],
+  "MBRX": [
+    {
+      "company": "Moleculin",
+      "event": "Part A full unblinding (90 subjects)",
+      "event_type": "Full / Detailed Data",
+      "indication": "Relapsed/refractory acute myeloid leukemia (R/R AML), 2nd-line patients incl. prior venetoclax failures",
+      "phase": "2",
+      "product": "Annamycin + cytarabine",
+      "timing": "Dec 2026 to Feb 2027"
+    },
+    {
+      "company": "Moleculin",
+      "event": "Primary efficacy data from pivotal Phase 2/3 MIRACLE trial (Part A + Part B, 2nd-line subjects)",
+      "event_type": "Topline Readout",
+      "indication": "Relapsed/refractory acute myeloid leukemia (R/R AML), 2nd-line patients incl. prior venetoclax failures",
+      "phase": "3",
+      "product": "Annamycin + cytarabine",
+      "timing": "2028"
     }
   ],
   "MBX": [
@@ -2254,7 +2483,7 @@
       "indication": "Select solid tumor indications",
       "phase": "1",
       "product": "MGC026",
-      "timing": "October 2026 (ESMO 2026)"
+      "timing": "Read Out"
     }
   ],
   "MGTX": [
@@ -2271,21 +2500,21 @@
   "MIRM": [
     {
       "company": "Mirum",
-      "event": "EXPAND Phase 3 topline data",
-      "event_type": "Topline Readout",
-      "indication": "Cholestatic Pruritus",
-      "phase": "3",
-      "product": "Livmarli",
-      "timing": "Q4 2026"
-    },
-    {
-      "company": "Mirum",
       "event": "AZURE-1 and AZURE-4 Phase 3 Topline",
       "event_type": "Topline Readout",
       "indication": "Hepatitis delta virus (HDV)",
       "phase": "3",
       "product": "brelovitug",
-      "timing": "AZURE-1 Q3 2026 / AZURE-4 Q4 2026"
+      "timing": "Read Out"
+    },
+    {
+      "company": "Mirum",
+      "event": "EXPAND Phase 3 topline data",
+      "event_type": "Topline Readout",
+      "indication": "Cholestatic Pruritus",
+      "phase": "3",
+      "product": "Livmarli",
+      "timing": "Read Out"
     }
   ],
   "MLTX": [
@@ -2357,6 +2586,28 @@
       "timing": "H2 2027"
     }
   ],
+  "MRK": [
+    {
+      "company": "Merck / Moderna",
+      "event": "Primary (DFS) data from Phase 1/2 INTerpath-005 trial",
+      "event_type": "Topline Readout",
+      "indication": "Resected high-risk muscle-invasive urothelial carcinoma (MIUC), adjuvant",
+      "phase": "2026-01-02 00:00:00",
+      "product": "Intismeran autogene (V940 / mRNA-4157) + pembrolizumab",
+      "timing": "Est. 2027 (no company guidance)"
+    }
+  ],
+  "MRNA": [
+    {
+      "company": "Merck / Moderna",
+      "event": "Primary (DFS) data from Phase 1/2 INTerpath-005 trial",
+      "event_type": "Topline Readout",
+      "indication": "Resected high-risk muscle-invasive urothelial carcinoma (MIUC), adjuvant",
+      "phase": "2026-01-02 00:00:00",
+      "product": "Intismeran autogene (V940 / mRNA-4157) + pembrolizumab",
+      "timing": "Est. 2027 (no company guidance)"
+    }
+  ],
   "MSLE": [
     {
       "company": "Satellos",
@@ -2366,6 +2617,35 @@
       "phase": "2",
       "product": "SAT-3247",
       "timing": "Q4 2026"
+    }
+  ],
+  "NAMS": [
+    {
+      "company": "NewAmsterdam Pharma Company N.V.",
+      "event": "PREVAIL CVOT interim analysis result",
+      "event_type": "Interim Readout",
+      "indication": "ASCVD (cardiovascular outcomes)",
+      "phase": "3",
+      "product": "Obicetrapib",
+      "timing": "Q1 2027 (interim analysis 4Q 2026)"
+    },
+    {
+      "company": "NewAmsterdam Pharma Company N.V.",
+      "event": "RUBENS topline",
+      "event_type": "Topline Readout",
+      "indication": "Type 2 Diabetes or Metabolic Syndrome Requiring Additional LDL-C Lowering",
+      "phase": "3",
+      "product": "Obicetrapib alone or + ezetimibe",
+      "timing": "YE 2026"
+    },
+    {
+      "company": "NewAmsterdam Pharma Company N.V.",
+      "event": "PREVAIL CVOT interim analysis result",
+      "event_type": "Interim Readout",
+      "indication": "ASCVD (cardiovascular outcomes)",
+      "phase": "3",
+      "product": "Obicetrapib",
+      "timing": "Q1 2027 (interim analysis 4Q 2026)"
     }
   ],
   "NANO": [
@@ -2410,26 +2690,15 @@
       "timing": "H2 2027"
     }
   ],
-  "NGEN": [
-    {
-      "company": "NervGen",
-      "event": "Completion of enrollment of Phase 3 RESTORE registrational trial",
-      "event_type": "Enrollment Milestone",
-      "indication": "Chronic tetraplegia",
-      "phase": "3",
-      "product": "NVG-291",
-      "timing": "Mid-2027"
-    }
-  ],
   "NKTR": [
     {
       "company": "Nektar",
-      "event": "24-week data from off-treatment observation period of Phase 2 RESOLVE-AA trial in severe-to-very-severe patients",
+      "event": "52-week & off-treatment follow-up of Phase 2 RESOLVE-AA trial in severe-to-very-severe patients",
       "event_type": "Updated / Follow-up Data",
       "indication": "Alopecia areata",
       "phase": "2",
       "product": "Rezpegaldesleukin",
-      "timing": "Q4 2026"
+      "timing": "Read Out"
     },
     {
       "company": "Nektar",
@@ -2438,7 +2707,7 @@
       "indication": "Atopic dermatitis",
       "phase": "2",
       "product": "Rezpegaldesleukin",
-      "timing": "Q1 2027"
+      "timing": "Read Out"
     },
     {
       "company": "Nektar",
@@ -2458,7 +2727,7 @@
       "indication": "Alzheimer's Disease (AD) Agitation",
       "phase": "1",
       "product": "NMRA-511",
-      "timing": "Q4 2026"
+      "timing": "Read Out"
     },
     {
       "company": "Neumora",
@@ -2511,7 +2780,7 @@
       "indication": "Grade 3 IDH1-mutant oligodendroglioma",
       "phase": "2",
       "product": "Safusidenib",
-      "timing": "2027"
+      "timing": "Read Out"
     }
   ],
   "NVCT": [
@@ -2590,32 +2859,32 @@
   "ORIC": [
     {
       "company": "Oric Pharma",
+      "event": "1L EGFR PACC monotherapy data",
+      "event_type": "Initial Data Readout",
+      "indication": "Non-small cell lung cancer (NSCLC) patients with EGFR exon 20 and EGFR atypical mutations",
+      "phase": "1",
+      "product": "Enozertinib",
+      "timing": "Read Out"
+    },
+    {
+      "company": "Oric Pharma",
       "event": "1L EGFR exon 20 monotherapy data; combination data with subcutaneous amivantamab",
       "event_type": "Initial Data Readout",
       "indication": "Non-small cell lung cancer (NSCLC) patients with EGFR exon 20, HER2 exon 20, and EGFR atypical mutations",
       "phase": "1",
       "product": "Enozertinib",
       "timing": "H2 2026"
-    },
-    {
-      "company": "Oric Pharma",
-      "event": "1L EGFR PACC monotherapy data",
-      "event_type": "Initial Data Readout",
-      "indication": "Non-small cell lung cancer (NSCLC) patients with EGFR exon 20 and EGFR atypical mutations",
-      "phase": "1",
-      "product": "Enozertinib",
-      "timing": "October 2026 (ESMO Congress)"
     }
   ],
   "ORKA": [
     {
       "company": "Oruka",
-      "event": "Longer-term data from the Phase 2a EVERLAST-A trial",
+      "event": "Week 28 data from the Phase 2a EVERLAST-A trial",
       "event_type": "Updated / Follow-up Data",
       "indication": "Moderate-to-severe plaque psoriasis (PsO)",
       "phase": "2",
       "product": "ORKA-001",
-      "timing": "Week 28 data end of Q3 2026; 52-week data December 2026"
+      "timing": "Read Out"
     },
     {
       "company": "Oruka",
@@ -2624,7 +2893,16 @@
       "indication": "Moderate-to-severe plaque psoriasis (PsO)",
       "phase": "2",
       "product": "ORKA-001",
-      "timing": "2027"
+      "timing": "Read Out"
+    },
+    {
+      "company": "Oruka",
+      "event": "Week 52 data from the Phase 2a EVERLAST-A trial",
+      "event_type": "Topline Readout",
+      "indication": "Moderate-to-severe plaque psoriasis (PsO)",
+      "phase": "2",
+      "product": "ORKA-001",
+      "timing": "2026-12-01 00:00:00"
     },
     {
       "company": "Oruka",
@@ -2724,7 +3002,7 @@
       "indication": "Pneumococcal (PC) Diseases",
       "phase": "3",
       "product": "VAX-31",
-      "timing": "Q4 2026"
+      "timing": "Read Out"
     },
     {
       "company": "Vaxcyte",
@@ -2773,7 +3051,7 @@
       "indication": "Prophylaxis for hereditary angioedema (HAE) attacks",
       "phase": "3",
       "product": "Deucrictibant",
-      "timing": "Q3 2026"
+      "timing": "Read Out"
     }
   ],
   "PLX": [
@@ -2860,6 +3138,26 @@
       "timing": "Q4 2026"
     }
   ],
+  "QURE": [
+    {
+      "company": "uniQure N.V.",
+      "event": "Topline four-year data",
+      "event_type": "Updated / Follow-up Data",
+      "indication": "Huntington's Disease",
+      "phase": "1",
+      "product": "AMT-130",
+      "timing": "Read Out"
+    },
+    {
+      "company": "uniQure N.V.",
+      "event": "Updated results including second dose cohort (six patients)",
+      "event_type": "Updated / Follow-up Data",
+      "indication": "Refractory Mesial Temporal Lobe Epilepsy (second cohort)",
+      "phase": "1",
+      "product": "AMT-260",
+      "timing": "H1 2027"
+    }
+  ],
   "RAPP": [
     {
       "company": "Rapport",
@@ -2868,7 +3166,7 @@
       "indication": "Bipolar Mania",
       "phase": "2",
       "product": "RAP-219",
-      "timing": "October 2026"
+      "timing": "Read Out"
     }
   ],
   "RARE": [
@@ -2879,7 +3177,7 @@
       "indication": "Angelman syndrome (AS) in patients with full maternal UBE3A gene deletion",
       "phase": "3",
       "product": "GTX-102",
-      "timing": "September or October 2026"
+      "timing": "Read Out"
     },
     {
       "company": "Ultragenyx",
@@ -2899,7 +3197,7 @@
       "indication": "Clear cell renal cell carcinoma (ccRCC)",
       "phase": "1",
       "product": "Casdatifan",
-      "timing": "H2 2026"
+      "timing": "Read Out"
     },
     {
       "company": "Arcus",
@@ -2908,7 +3206,7 @@
       "indication": "Clear cell renal cell carcinoma (ccRCC)",
       "phase": "1",
       "product": "Casdatifan",
-      "timing": "H2 2026"
+      "timing": "Read Out"
     },
     {
       "company": "Arcus",
@@ -2917,7 +3215,7 @@
       "indication": "Clear cell renal cell carcinoma (ccRCC)",
       "phase": "1",
       "product": "Casdatifan",
-      "timing": "H2 2026"
+      "timing": "Read Out"
     }
   ],
   "REPL": [
@@ -3018,21 +3316,21 @@
   "RXRX": [
     {
       "company": "Recursion",
+      "event": "Additional Phase 1b/2 clinical data expected",
+      "event_type": "Updated / Follow-up Data",
+      "indication": "Familial adenomatous polyposis (FAP)",
+      "phase": "1",
+      "product": "REC-4881",
+      "timing": "Read Out"
+    },
+    {
+      "company": "Recursion",
       "event": "Additional Phase 1 dose escalation data expected",
       "event_type": "Updated / Follow-up Data",
       "indication": "Biomarker-enriched solid tumors and lymphoma",
       "phase": "1",
       "product": "REC-1245",
       "timing": "H2 2026"
-    },
-    {
-      "company": "Recursion",
-      "event": "Additional Phase 1b/2 clinical data expected",
-      "event_type": "Updated / Follow-up Data",
-      "indication": "Familial adenomatous polyposis (FAP)",
-      "phase": "1",
-      "product": "REC-4881",
-      "timing": "H1 2027"
     },
     {
       "company": "Recursion",
@@ -3061,7 +3359,7 @@
       "indication": "Tumor hyperinsulinism",
       "phase": "3",
       "product": "Ersodetug",
-      "timing": "H2 2026"
+      "timing": "Read Out"
     }
   ],
   "SABS": [
@@ -3098,21 +3396,12 @@
   "SGP": [
     {
       "company": "SpyGlass",
-      "event": "Complete registrational Phase 3 enrollment for SGP-005 and SGP-006 trials",
-      "event_type": "Enrollment Milestone",
-      "indication": "Open-angle glaucoma (OAG)/Ocular Hypertension (OHT)",
-      "phase": "3",
-      "product": "Bimatoprost Drug Pad Intraocular Lens System (BIM-IOL)",
-      "timing": "2027"
-    },
-    {
-      "company": "SpyGlass",
-      "event": "24-month data from Phase 1/2",
+      "event": "4-year data from FIH trial",
       "event_type": "Updated / Follow-up Data",
       "indication": "Open-angle glaucoma (OAG)/Ocular Hypertension (OHT)",
       "phase": "1",
       "product": "Bimatoprost Drug Pad Intraocular Lens System (BIM-IOL)",
-      "timing": "2027"
+      "timing": "Read Out"
     }
   ],
   "SION": [
@@ -3205,24 +3494,44 @@
       "indication": "Maintenance in acute myeloid leukemia (AML) after 2nd complete remission",
       "phase": "3",
       "product": "Galinpepimut-S (GPS)",
-      "timing": "Event-driven (78/80 events, Aug 2026)"
+      "timing": "Read Out"
+    }
+  ],
+  "SMMT": [
+    {
+      "company": "Summit Therapeutics Inc",
+      "event": "HARMONi-3 squamous cohort final PFS analysis",
+      "event_type": "Topline Readout",
+      "indication": "1L Metastatic Squamous NSCLC",
+      "phase": "3",
+      "product": "Ivonescimab (SMT112)",
+      "timing": "H2 2026 (PFS events); OS interim H1 2027"
+    },
+    {
+      "company": "Summit Therapeutics Inc",
+      "event": "HARMONi-3 non-squamous cohort PFS analysis",
+      "event_type": "Topline Readout",
+      "indication": "1L Metastatic Non-Squamous NSCLC",
+      "phase": "3",
+      "product": "Ivonescimab (SMT112)",
+      "timing": "H1 2027 (PFS events)"
     }
   ],
   "SNDX": [
     {
       "company": "Syndax",
-      "event": "Phase 2 topline data",
-      "event_type": "Topline Readout",
-      "indication": "Newly diagnosed chronic GVHD",
-      "phase": "2",
-      "product": "Niktimvo (axatilimab)",
-      "timing": "Q4 2026"
-    },
-    {
-      "company": "Syndax",
       "event": "Phase 2 MAXPIRe topline data",
       "event_type": "Topline Readout",
       "indication": "Idiopathic pulmonary fibrosis (IPF)",
+      "phase": "2",
+      "product": "Niktimvo (axatilimab)",
+      "timing": "Read Out"
+    },
+    {
+      "company": "Syndax",
+      "event": "Phase 2 topline data",
+      "event_type": "Topline Readout",
+      "indication": "Newly diagnosed chronic GVHD",
       "phase": "2",
       "product": "Niktimvo (axatilimab)",
       "timing": "Q4 2026"
@@ -3286,6 +3595,17 @@
       "timing": "H1 2027"
     }
   ],
+  "SRRK": [
+    {
+      "company": "Scholar Rock Holding Corp",
+      "event": "Topline data from Phase 1 healthy volunteer study",
+      "event_type": "Topline Readout",
+      "indication": "Healthy Volunteers (for cardiometabolic / neuromuscular)",
+      "phase": "1",
+      "product": "SRK-439",
+      "timing": "Late 2026"
+    }
+  ],
   "STOK": [
     {
       "company": "Stoke",
@@ -3320,21 +3640,21 @@
     },
     {
       "company": "Spyre",
-      "event": "Topline open-label monotherapy data from Phase 2 platform trial in ulcerative colitis (SKYLINE)",
-      "event_type": "Topline Readout",
-      "indication": "Ulcerative colitis (UC)",
-      "phase": "2",
-      "product": "SPY003",
-      "timing": "September 2026"
-    },
-    {
-      "company": "Spyre",
       "event": "Topline results from Phase 2 SKYWAY trial",
       "event_type": "Topline Readout",
       "indication": "Rheumatoid Arthritis",
       "phase": "2",
       "product": "SPY072",
-      "timing": "September 2026"
+      "timing": "Read Out"
+    },
+    {
+      "company": "Spyre",
+      "event": "Topline open-label monotherapy data from Phase 2 platform trial in ulcerative colitis (SKYLINE)",
+      "event_type": "Topline Readout",
+      "indication": "Ulcerative colitis (UC)",
+      "phase": "2",
+      "product": "SPY003",
+      "timing": "Read Out"
     },
     {
       "company": "Spyre",
@@ -3470,7 +3790,7 @@
       "indication": "Progressive multiple sclerosis (PMS)",
       "phase": "1",
       "product": "Azer-cel (azercabtagene zapreleucel)",
-      "timing": "H2 2026"
+      "timing": "Read Out"
     },
     {
       "company": "TG Therapeutics",
@@ -3490,7 +3810,7 @@
       "indication": "Non-active secondary progressive multiple sclerosis (na-SPMS)",
       "phase": "2",
       "product": "Foralumab",
-      "timing": "Late Q3 / Early Q4 2026"
+      "timing": "Read Out"
     },
     {
       "company": "Tiziana",
@@ -3500,6 +3820,35 @@
       "phase": "2",
       "product": "Foralumab",
       "timing": "2026"
+    }
+  ],
+  "TNGX": [
+    {
+      "company": "Tango Therapeutics Inc",
+      "event": "Updated combination data at ESMO 2026",
+      "event_type": "Updated / Follow-up Data",
+      "indication": "MTAP-deleted, RAS-mutant Pancreatic Cancer",
+      "phase": "1",
+      "product": "Vopimetostat (TNG462) + daraxonrasib / zoldonrasib",
+      "timing": "Read Out"
+    },
+    {
+      "company": "Tango Therapeutics Inc",
+      "event": "Lung cancer monotherapy cohort data",
+      "event_type": "Updated / Follow-up Data",
+      "indication": "MTAP-deleted Non-Small Cell Lung Cancer (monotherapy)",
+      "phase": "1",
+      "product": "Vopimetostat (TNG462)",
+      "timing": "H2 2026"
+    },
+    {
+      "company": "Tango Therapeutics Inc",
+      "event": "Initial clinical data (NCT06810544)",
+      "event_type": "Initial Data Readout",
+      "indication": "MTAP-deleted Glioblastoma and Other Solid Tumors",
+      "phase": "1",
+      "product": "TNG456",
+      "timing": "H2 2026"
     }
   ],
   "TNYA": [
@@ -3523,6 +3872,33 @@
     }
   ],
   "TRAX": [
+    {
+      "company": "First Tracks Biotherapeutics Inc",
+      "event": "Cohort 1 top-line (prevention of gluten-induced mucosal injury)",
+      "event_type": "Topline Readout",
+      "indication": "Celiac Disease (gluten challenge)",
+      "phase": "1",
+      "product": "ANB033",
+      "timing": "Read Out"
+    },
+    {
+      "company": "First Tracks Biotherapeutics Inc",
+      "event": "Cohort 2 top-line (mucosal healing through 12 weeks)",
+      "event_type": "Topline Readout",
+      "indication": "Celiac Disease (mucosal healing)",
+      "phase": "1",
+      "product": "ANB033",
+      "timing": "Q1 2027"
+    },
+    {
+      "company": "First Tracks Biotherapeutics Inc",
+      "event": "Phase 1b top-line",
+      "event_type": "Topline Readout",
+      "indication": "Eosinophilic Esophagitis",
+      "phase": "1",
+      "product": "ANB033",
+      "timing": "Q3 2027"
+    },
     {
       "company": "First Tracks Bio",
       "event": "Topline data of Cohort 1 of 2 from Phase 1b trial",
@@ -3591,6 +3967,17 @@
       "timing": "H2 2027"
     }
   ],
+  "TSHA": [
+    {
+      "company": "Taysha Gene Therapies Inc",
+      "event": "REVEAL pivotal Part B six-month interim topline",
+      "event_type": "Interim Readout",
+      "indication": "Rett Syndrome (developmental plateau, ages 6 to <22)",
+      "phase": "3",
+      "product": "TSHA-102",
+      "timing": "H1 2027"
+    }
+  ],
   "TVRD": [
     {
       "company": "Tvardi",
@@ -3602,6 +3989,26 @@
       "timing": "Q4 2026"
     }
   ],
+  "TVTX": [
+    {
+      "company": "Travere Therapeutics Inc",
+      "event": "SPARX Study data presentations",
+      "event_type": "Initial Data Readout",
+      "indication": "Post-Transplant Recurrent IgAN or FSGS",
+      "phase": "2",
+      "product": "FILSPARI (sparsentan)",
+      "timing": "2027"
+    },
+    {
+      "company": "Travere Therapeutics Inc",
+      "event": "HARMONY pivotal topline (tHcy change, weeks 6-12)",
+      "event_type": "Topline Readout",
+      "indication": "Classical Homocystinuria (HCU)",
+      "phase": "3",
+      "product": "Pegtibatinase (TVT-058)",
+      "timing": "H2 2027"
+    }
+  ],
   "TYRA": [
     {
       "company": "Tyra",
@@ -3610,7 +4017,7 @@
       "indication": "Intermediate-risk non-muscle invasive bladder cancer (IR NMIBC)",
       "phase": "2",
       "product": "Dabogratinib",
-      "timing": "September 2026"
+      "timing": "Read Out"
     },
     {
       "company": "Tyra",
@@ -3642,6 +4049,17 @@
       "timing": "H2 2027"
     }
   ],
+  "UTHR": [
+    {
+      "company": "United Therapeutics Corp",
+      "event": "TETON-PPF topline",
+      "event_type": "Topline Readout",
+      "indication": "Progressive Pulmonary Fibrosis (PPF)",
+      "phase": "3",
+      "product": "Nebulized Tyvaso (inhaled treprostinil)",
+      "timing": "H2 2027"
+    }
+  ],
   "VALN": [
     {
       "company": "Valneva",
@@ -3650,7 +4068,7 @@
       "indication": "Shigellosis",
       "phase": "2",
       "product": "S4V2",
-      "timing": "Mid-2026"
+      "timing": "Read Out"
     },
     {
       "company": "Valneva",
@@ -3659,7 +4077,7 @@
       "indication": "Shigellosis",
       "phase": "2",
       "product": "S4V2",
-      "timing": "Mid-2026"
+      "timing": "Read Out"
     }
   ],
   "VERA": [
@@ -3670,7 +4088,7 @@
       "indication": "IgA nephropathy (IgAN)",
       "phase": "3",
       "product": "Atacicept",
-      "timing": "Q1 2027"
+      "timing": "Read Out"
     }
   ],
   "VIR": [
@@ -3681,7 +4099,7 @@
       "indication": "Chronic hepatitis delta",
       "phase": "3",
       "product": "Tobevibart + elebsiran",
-      "timing": "Q4 2026"
+      "timing": "Read Out"
     },
     {
       "company": "Vir",
@@ -3710,13 +4128,13 @@
       "indication": "Obesity",
       "phase": "3",
       "product": "VK2735",
-      "timing": "Q3 2026"
+      "timing": "Read Out"
     }
   ],
   "VOR": [
     {
       "company": "Vor Bio",
-      "event": "Topline data from the Phase 3 trial",
+      "event": "Topline results from UPSTREAM MG\u2019s 24-week primary endpoint",
       "event_type": "Topline Readout",
       "indication": "Generalized myasthenia gravis (gMG)",
       "phase": "3",
@@ -3732,7 +4150,7 @@
       "indication": "Healthy Volunteers",
       "phase": "1",
       "product": "VRDN-008",
-      "timing": "H2 2026"
+      "timing": "Read Out"
     }
   ],
   "VSTM": [
@@ -3743,7 +4161,7 @@
       "indication": "KRAS G12D-mutated solid tumors",
       "phase": "1",
       "product": "VS-7375",
-      "timing": "October 2026"
+      "timing": "Read Out"
     }
   ],
   "VTVT": [
@@ -3768,6 +4186,17 @@
       "timing": "H1 2027"
     }
   ],
+  "WVE": [
+    {
+      "company": "Wave Life Sciences Ltd",
+      "event": "INLIGHT Phase 1 additional data including 600 mg cohort",
+      "event_type": "Updated / Follow-up Data",
+      "indication": "Obesity (Phase 1 single-dose, incl. 600 mg cohort)",
+      "phase": "1",
+      "product": "WVE-007",
+      "timing": "2026 (per earnings call)"
+    }
+  ],
   "XENE": [
     {
       "company": "Xenon Pharmaceuticals",
@@ -3777,6 +4206,17 @@
       "phase": "3",
       "product": "Azetukalner",
       "timing": "H1 2027"
+    }
+  ],
+  "XFOR": [
+    {
+      "company": "X4 Pharmaceuticals Inc",
+      "event": "4WARD pivotal topline",
+      "event_type": "Topline Readout",
+      "indication": "Chronic Neutropenia (congenital, acquired primary autoimmune, idiopathic)",
+      "phase": "3",
+      "product": "Mavorixafor (XOLREMDI) +/- G-CSF",
+      "timing": "H1 2028"
     }
   ],
   "ZBIO": [
@@ -3836,7 +4276,7 @@
       "indication": "Moderate to severe Hidradenitis suppurativa (HS)",
       "phase": "2",
       "product": "Tibulizumab",
-      "timing": "Q4 2026"
+      "timing": "Read Out"
     },
     {
       "company": "Zura",
@@ -3846,6 +4286,26 @@
       "phase": "2",
       "product": "Tibulizumab",
       "timing": "H1 2027"
+    }
+  ],
+  "ZYME": [
+    {
+      "company": "Zymeworks Inc",
+      "event": "Updated OS data presentation",
+      "event_type": "Updated / Follow-up Data",
+      "indication": "1L HER2+ Gastroesophageal Adenocarcinoma",
+      "phase": "3",
+      "product": "Zanidatamab (Ziihera) +/- tislelizumab + chemo",
+      "timing": "Q4 2026 (major medical meeting)"
+    },
+    {
+      "company": "Zymeworks Inc",
+      "event": "EmpowHER-303 topline",
+      "event_type": "Topline Readout",
+      "indication": "HER2+ Metastatic Breast Cancer",
+      "phase": "3",
+      "product": "Zanidatamab (Ziihera)",
+      "timing": "YE 2027 or early 2028"
     }
   ]
 }
