@@ -51,14 +51,22 @@ MODEL = "claude-sonnet-4-6"
 WATCHLIST_PATH = "watchlist.json"
 STATE_PATH = "state.json"
 WEBSITES_PATH = "websites.json"
+PIPELINES_PATH = "pipelines.json"
 
-# Kept separate from watchlist.json since it's stable company info, not
-# spreadsheet-derived -- re-running build_watchlist.py must not wipe it out.
-try:
-    with open(WEBSITES_PATH) as f:
-        WEBSITES = json.load(f)
-except (FileNotFoundError, json.JSONDecodeError):
-    WEBSITES = {}
+
+def _load_links(path):
+    # A missing/bad link file just means alerts go out without that link.
+    try:
+        with open(path) as f:
+            return json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {}
+
+
+# websites.json is maintained by hand (stable company info). pipelines.json is
+# regenerated from the spreadsheet's Company-cell hyperlinks by build_watchlist.py.
+WEBSITES = _load_links(WEBSITES_PATH)
+PIPELINES = _load_links(PIPELINES_PATH)
 
 SYMBOL_CHUNK = 50        # symbols per API request
 LOOKBACK_FLOOR_MIN = 90  # on first run / stale state, look back this far
@@ -320,6 +328,7 @@ def build_alert(article, verdict, events):
         "icon": OUTCOME_ICON.get(verdict.get("outcome"), "⚪"),
         "company": tracked.get("company") or "Unknown",
         "company_url": WEBSITES.get(tracked.get("ticker")),
+        "pipeline_url": PIPELINES.get(tracked.get("ticker")),
         "tickers": tickers,
         "headline": article.get("headline", ""),
         "url": article.get("url", ""),
@@ -363,9 +372,14 @@ def send_slack(a):
         {"type": "section", "text": {"type": "mrkdwn",
          "text": f"*<{esc_mrkdwn(a['url'])}|{esc_mrkdwn(a['headline'])}>*"}},
     ]
+    links = []
     if a.get("company_url"):
+        links.append(f"🏢 <{esc_mrkdwn(a['company_url'])}|{esc_mrkdwn(a['company'])} website>")
+    if a.get("pipeline_url"):
+        links.append(f"🧪 <{esc_mrkdwn(a['pipeline_url'])}|Pipeline>")
+    if links:
         blocks.append({"type": "context", "elements": [{"type": "mrkdwn",
-                       "text": f"🏢 <{esc_mrkdwn(a['company_url'])}|{esc_mrkdwn(a['company'])} website>"}]})
+                       "text": "  ·  ".join(links)}]})
     if a["one_line"]:
         blocks.append({"type": "context",
                        "elements": [{"type": "mrkdwn", "text": esc_mrkdwn(a["one_line"])}]})
@@ -396,13 +410,19 @@ def email_html(a):
         f'{esc_html(a["company"])}</a>'
         if a.get("company_url") else esc_html(a["company"])
     )
+    pipeline_html = (
+        f'\n  <p style="font-size:14px;margin:12px 0 0">'
+        f'<a href="{esc_html(a["pipeline_url"])}" style="color:#0b5cff;text-decoration:none">'
+        f'View {esc_html(a["company"])} pipeline &rarr;</a></p>'
+        if a.get("pipeline_url") else ""
+    )
     return f"""<div style="font-family:-apple-system,Segoe UI,Helvetica,sans-serif;max-width:620px">
   <p style="font-size:20px;margin:0 0 4px">{a['icon']} <b>{company_html}</b>
      <span style="color:#666">({esc_html(a['tickers'])})</span></p>
   <p style="font-size:17px;line-height:1.4;margin:12px 0">
      <a href="{esc_html(a['url'])}" style="color:#0b5cff;text-decoration:none">{esc_html(a['headline'])}</a></p>
   <p style="color:#444;font-style:italic;margin:12px 0">{esc_html(a['one_line'])}</p>
-  <table style="font-size:14px;border-collapse:collapse;margin-top:16px">{rows}</table>
+  <table style="font-size:14px;border-collapse:collapse;margin-top:16px">{rows}</table>{pipeline_html}
   <p style="color:#999;font-size:12px;margin-top:20px">{esc_html(a['source'])} · {esc_html(a['published'])}</p>
 </div>"""
 
@@ -411,9 +431,10 @@ def email_text(a):
     fields = "\n".join(f"{k}: {v}" for k, v in a["fields"])
     company_line = (f"{a['company']} ({a['tickers']}) — {a['company_url']}"
                      if a.get("company_url") else f"{a['company']} ({a['tickers']})")
+    pipeline_line = f"Pipeline: {a['pipeline_url']}\n" if a.get("pipeline_url") else ""
     return (f"{a['icon']} {company_line}\n\n"
             f"{a['headline']}\n\n{a['one_line']}\n\n{fields}\n\n"
-            f"Article: {a['url']}\n\n{a['source']} · {a['published']}")
+            f"{pipeline_line}Article: {a['url']}\n\n{a['source']} · {a['published']}")
 
 
 def send_email_resend(a):

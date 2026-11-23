@@ -107,7 +107,9 @@ pip install pandas openpyxl
 python build_watchlist.py "Prospective_Prediction_Project_-_July_2026_-_v6.xlsx"
 ```
 
-Writes `watchlist.json`. Re-run this whenever you update the spreadsheet.
+Writes `watchlist.json`, plus `pipelines.json` (the pipeline-page hyperlinks on
+the sheet's Company column, shown as a "Pipeline" link in alerts). Re-run this
+whenever you update the spreadsheet.
 
 ### 6. Create the repo
 
